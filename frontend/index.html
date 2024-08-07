@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Portfolio Management System</h1>
+        
+        <div id="loginSection">
+            <h2>Login</h2>
+            <input type="text" id="investorName" placeholder="Enter your name">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="mainSection" style="display: none;">
+            <h2>Welcome, <span id="welcomeName"></span>!</h2>
+            
+            <div class="action-buttons">
+                <button onclick="buyStocks()">Buy Stocks</button>
+                <button onclick="sellStocks()">Sell Stocks</button>
+                <button onclick="showPortfolio()">Show Portfolio</button>
+                <button onclick="updateStockPrices()">Update Stock Prices</button>
+                <button onclick="evaluateStockRisk()">Evaluate Stock Risk</button>
+                <button onclick="evaluatePortfolioRisk()">Evaluate Portfolio Risk</button>
+                <button onclick="showComprehensiveRiskReport()">Comprehensive Risk Report</button>
+            </div>
+
+            <div id="resultSection">
+                <h3>Results:</h3>
+                <pre id="results"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
